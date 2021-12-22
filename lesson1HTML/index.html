@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первый урок</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <div>Описание навыков для уроков</div>
-    <h1>Прудыус Марина</h1>
+    <h1 class="name">Прудыус Марина</h1>
     <h2 id="title">Обучение HTML</h2>
     <p>HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык разметки
         документов для просмотра веб-страниц в браузере. Веб-браузеры получают HTML документ от сервера по протоколам
@@ -25,7 +26,7 @@
     <a href="#title">Название урока</a>
 
     <h3>Основные теги HTML</h3>
-    <ul>
+    <ul class="font-blue">
         <li>
             head
         </li>
@@ -41,10 +42,22 @@
         <li>
             <a href="https://ru.wikipedia.org/wiki/HTML">Элементы HTML</a>Википедия
         </li>
+        <ul type='circle'>
+            <li>
+                ul
+            </li>
+            <li>
+                li
+            </li>
+            <li>
+                table
+            </li>
+
+        </ul>
 
     </ul>
     <hr />
-    <table border="1">
+    <table>
         <thead>
             <tr>
                 <th>
@@ -61,7 +74,7 @@
                     CSS
                 </td>
                 <td>
-                    +
+                    + <img src="css-logo.png" />
                 </td>
             </tr>
             <tr>
@@ -69,7 +82,7 @@
                     JavaScript
                 </td>
                 <td>
-                    +
+                    + <img src="js.png" />
                 </td>
             </tr>
             <tr>
@@ -77,7 +90,7 @@
                     TypeScript
                 </td>
                 <td>
-                    +
+                    + <img src="typescript.png.crdownload" />
                 </td>
             </tr>
             <tr>
@@ -85,13 +98,17 @@
                     PHP
                 </td>
                 <td>
-                    +
+                    + <img src="PHP-logo.svg.png" />
                 </td>
             </tr>
         </tbody>
-
     </table>
 
+    <a class="font-size-bg font-color-gray " href=" https://www.youtube.com/watch?v=GoBvYPwv-g8">Изучаем CSS</a>
+    <br />
+    <a class="font-size-md font-color-green" href=" http://www.ozon.ru/context/detail/id/135731189/">Методичка 1</a>
+    <br />
+    <a class="font-size-md font-color-green" href=" https://www.ozon.ru/context/detail/id/148584287/">Методичка 2</a>
 </body>
 
 </html>
