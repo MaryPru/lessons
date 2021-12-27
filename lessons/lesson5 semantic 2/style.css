@@ -1,0 +1,478 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentWrapper {
+    max-width: 1162px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#mainHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 36px 0 92px 0;
+}
+
+figure {
+    margin: 0;
+}
+
+nav {
+    max-width: 506px;
+    width: 100%;
+    margin-right: 184px;
+    margin-left: 105px;
+}
+
+#menuNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 506px;
+    width: 100%;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.backCall {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0;
+}
+
+#phone {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000000;
+}
+
+#phone span {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+}
+
+.headerBackproud {
+    width: 100%;
+    background: url(img/backgrGreen.png) no-repeat;
+    height: 660px;
+}
+
+#decorationHeader {
+    position: relative;
+}
+
+#logoBig {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#plate {
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+#chili {
+    position: absolute;
+    bottom: -133px;
+    right: -158px;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+#tomato {
+    filter: drop-shadow(15px 15px 40px rgba(0, 0, 0, 0.2));
+    bottom: -133px;
+    right: 423px;
+    position: absolute;
+}
+
+#tomato1 {
+    filter: drop-shadow(15px 15px 40px rgba(0, 0, 0, 0.2));
+    top: 80px;
+    right: 400px;
+    position: absolute;
+}
+
+#leaf2 {
+    bottom: -20px;
+    left: -90px;
+    position: absolute;
+    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
+}
+
+#leaf1 {
+    top: -53px;
+    right: -52px;
+    position: absolute;
+    filter: drop-shadow(20px 20px 40px rgba(0, 0, 0, 0.2));
+}
+
+#chooseProgram {
+    width: 293px;
+    height: 62px;
+    background: #162223;
+    border-radius: 58px;
+    margin: 87px 0 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#chooseProgram .buttonName {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 12px 13px;
+}
+
+#chooseProgram .wrapperImage {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #D1D94D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+}
+
+main {
+    margin-top: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#programs {
+    width: 100%;
+}
+
+.programsTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 61px;
+}
+
+.programsTitle h3 {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 100%;
+    color: #000000;
+    margin: 0;
+}
+
+.programsTitle p {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 104.5%;
+    color: #000000;
+}
+
+.line {
+    border-bottom: 2px solid #000000;
+    width: 87px;
+    height: 0;
+    margin: 24px auto 21px;
+}
+
+.programCards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.programCard {
+    max-width: 362px;
+    width: 100%;
+    margin-right: 36px;
+}
+
+.programCard:nth-child(3) {
+    margin-right: 0;
+}
+
+.programCard h3 {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 127%;
+    color: #000000;
+    margin: 27px 0 31px;
+}
+
+.meal {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 127%;
+    color: #63A233;
+    margin-bottom: 17px;
+}
+
+.programCard section p {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 127%;
+    color: #000000;
+}
+
+.mealsTime {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 234px;
+    width: 100%;
+    margin-bottom: 29.5px;
+}
+
+.mealTime {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 88.12px;
+    width: 100%;
+    margin: 0 28px 7.5px 0;
+}
+
+.mealTime img {
+    margin-right: 9px;
+}
+
+#menu li {
+    list-style-type: disc;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 172.5%;
+    color: #000000;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+#menu {
+    padding-inline-start: 18px;
+}
+
+#orderProgram {
+    border: 2px solid #EF3120;
+    box-sizing: border-box;
+    border-radius: 58px;
+    width: 248px;
+    height: 62px;
+    background: transparent;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #EF3120;
+    margin: 40px 0 50px;
+}
+
+#socialContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#instagram {
+    width: 100%;
+    max-width: 513px;
+    margin-bottom: 67px;
+}
+
+#instagram h1 {
+    text-align: center;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 100%;
+}
+
+#hashes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 0;
+}
+
+#email {
+    margin-right: 21px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 104.5%;
+}
+
+#hash {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 104.5%;
+}
+
+#pictures {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1162px;
+    width: 100%;
+}
+
+#pictures img {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #000000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#copyright {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-top: 90px;
+}
+
+.phone {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.adress {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.email {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.footerContacts {
+    align-self: flex-start;
+}
+
+.footerSocial {
+    align-self: flex-start;
+}
+
+.footerSocial p {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.footerSocial span {
+    font-family: Museo Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+#socialIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 197px;
+    width: 100%;
+    margin-bottom: 79px;
+}
