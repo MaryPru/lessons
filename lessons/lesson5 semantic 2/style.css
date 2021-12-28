@@ -138,7 +138,7 @@ p {
 #tomato1 {
     filter: drop-shadow(15px 15px 40px rgba(0, 0, 0, 0.2));
     top: 80px;
-    right: 400px;
+    left: 31px;
     position: absolute;
 }
 
