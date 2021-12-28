@@ -6,6 +6,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .contentWrapper {
@@ -18,7 +19,11 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    margin: 36px 0 92px 0;
+    justify-content: center;
+    position: absolute;
+    background: transparent;
+    top: 36px;
+    z-index: 10;
 }
 
 figure {
@@ -83,40 +88,50 @@ p {
     line-height: 120%;
 }
 
-.headerBackproud {
+#decoration {
     width: 100%;
     background: url(img/backgrGreen.png) no-repeat;
-    height: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#decorationHeader {
+.decorationLeft {
     position: relative;
+    max-width: calc(100% / 2);
+    width: 100%;
+    align-self: flex-start;
 }
 
-#logoBig {
+.decorationRight {
+    position: relative;
+    max-width: calc(100% / 2);
+    width: 100%;
+    align-self: flex-end;
+}
+
+#bigLogo {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 150px;
+    left: 81px;
 }
 
 #plate {
-    position: absolute;
-    top: -30px;
-    right: 30px;
+    padding: 0px 0 110px 80px;
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.1));
 }
 
 #chili {
     position: absolute;
-    bottom: -133px;
-    right: -158px;
+    bottom: -66px;
+    right: -45px;
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.15));
 }
 
 #tomato {
     filter: drop-shadow(15px 15px 40px rgba(0, 0, 0, 0.2));
-    bottom: -133px;
-    right: 423px;
+    left: -72px;
+    bottom: -75px;
     position: absolute;
 }
 
@@ -128,15 +143,15 @@ p {
 }
 
 #leaf2 {
-    bottom: -20px;
-    left: -90px;
+    bottom: 52px;
+    left: 4px;
     position: absolute;
     filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
 }
 
 #leaf1 {
-    top: -53px;
-    right: -52px;
+    top: -36px;
+    right: 117px;
     position: absolute;
     filter: drop-shadow(20px 20px 40px rgba(0, 0, 0, 0.2));
 }
@@ -146,7 +161,7 @@ p {
     height: 62px;
     background: #162223;
     border-radius: 58px;
-    margin: 87px 0 68px;
+    margin: 517px 0 81px 68px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -161,6 +176,7 @@ p {
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 12px 13px;
+    background: transparent;
 }
 
 #chooseProgram .wrapperImage {
@@ -175,7 +191,6 @@ p {
 }
 
 main {
-    margin-top: 195px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,6 +200,7 @@ main {
 
 #programs {
     width: 100%;
+    margin-top: 95px;
 }
 
 .programsTitle {
