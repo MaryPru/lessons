@@ -1,0 +1,872 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content {
+    max-width: 1162px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: transparent;
+    top: 36px;
+    z-index: 10;
+}
+
+.menu {
+    max-width: 506px;
+    width: 100%;
+    margin-right: 184px;
+    margin-left: 105px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 506px;
+    width: 100%;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link {
+    color: black;
+    cursor: pointer;
+    position: relative;
+    line-height: 1;
+    transition: 400ms;
+}
+
+.menu__link:hover {
+    color: #FF8C00;
+}
+
+.menu__link:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #FF8C00;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+.menu__link:hover:after {
+    width: 100%;
+}
+
+
+.phone__number {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000000;
+    transition: 400ms;
+}
+
+.phone__number:hover,
+.phone__text:hover {
+    color: #FF8C00;
+    cursor: pointer;
+}
+
+.phone__text {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+    text-decoration: underline;
+    color: #000000;
+    transition: 400ms;
+}
+
+.decoration {
+    width: 100%;
+    background: url(img/backgrGreen.png) no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+* [class^="decoration-right__"]:not(.decoration-right__plate){
+    position: absolute;
+}
+
+.decoration-left {
+    position: relative;
+    max-width: calc(100% / 2);
+    width: 100%;
+    align-self: flex-start;
+}
+
+.decoration-right {
+    position: relative;
+    max-width: calc(100% / 2);
+    width: 100%;
+    align-self: flex-end;
+}
+
+.decoration-left__bigLogo {
+    position: absolute;
+    top: 150px;
+    left: 81px;
+}
+
+.decoration-right__plate {
+    padding: 0px 0 110px 80px;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+.decoration-right__chili {
+        bottom: -66px;
+    right: -45px;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+.decoration-right__tomato {
+    filter: drop-shadow(15px 15px 40px rgba(0, 0, 0, 0.2));
+    left: -72px;
+    bottom: -75px;
+    }
+
+.decoration-right__tomato1 {
+    filter: drop-shadow(15px 15px 40px rgba(0, 0, 0, 0.2));
+    top: 80px;
+    left: 31px;
+    }
+
+.decoration-left__leaf2 {
+    bottom: 52px;
+    left: 4px;
+    position: absolute;
+    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
+}
+
+.decoration-right__leaf1 {
+    top: -36px;
+    right: 117px;
+    filter: drop-shadow(20px 20px 40px rgba(0, 0, 0, 0.2));
+}
+
+.decoration-left__choose-program-button {
+    width: 293px;
+    height: 62px;
+    background: #162223;
+    border-radius: 58px;
+    margin: 517px 0 81px 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.decoration-left__button-name {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 12px 13px;
+    background: transparent;
+}
+
+.decoration-left__button-image {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #D1D94D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.decoration__item:hover {
+    animation: 2s spin-scale;
+}
+
+.decoration__item {
+    transition: 400ms;
+}
+
+@keyframes spin-scale {
+    50% {
+        transform: rotate(4deg) scale(1.5);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(0.95);
+    }
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.benefits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 90px;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.benefits__item:first-child {
+    padding: 0;
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.benefits__item:nth-child(2) {
+    padding: 0;
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 3s;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.benefits__item:nth-child(3) {
+    padding: 0;
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 4.5s;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.benefits__item:nth-child(4) {
+    padding: 0;
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 6s;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.benefits__item:nth-child(5) {
+    padding: 0;
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 7.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flipOutY {
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+
+    80% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(400px) rotateY(360deg);
+    }
+}
+
+.benefits__item {
+    width: 100%;
+    max-width: 154px;
+}
+
+.benefits__item-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #BFE142;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.benefits .benefits__item:nth-child(1) .benefits__item-img {
+    animation: 8.5s flipOutY 1s infinite;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.benefits .benefits__item:nth-child(2) .benefits__item-img {
+    animation: 8.5s flipOutY 2s infinite;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.benefits .benefits__item:nth-child(3) .benefits__item-img {
+    animation: 8.5s flipOutY 3s infinite;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.benefits .benefits__item:nth-child(4) .benefits__item-img {
+    animation: 8.5s flipOutY 4s infinite;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.benefits .benefits__item:nth-child(5) .benefits__item-img {
+    animation: 8.5s flipOutY 5s infinite;
+}
+
+.benefits__item-title {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+    margin-top: 15px;
+}
+
+.programs {
+    width: 100%;
+    margin-top: 95px;
+}
+
+.programs__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 61px;
+}
+
+.programs-header__title {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 100%;
+    color: #000000;
+    margin: 0;
+}
+
+.programs-header__subtitle {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 104.5%;
+    color: #000000;
+}
+
+.line {
+    border-bottom: 2px solid #000000;
+    width: 87px;
+    height: 0;
+    margin: 24px auto 21px;
+}
+
+.programs__cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 362px;
+    width: 100%;
+    margin-right: 36px;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.card:nth-child(3) {
+    margin-right: 0;
+}
+
+.card__title {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 127%;
+    color: #000000;
+    margin: 27px 0 31px;
+}
+
+.card__meal {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 127%;
+    color: #63A233;
+    margin-bottom: 17px;
+}
+
+.meals-time__name {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 127%;
+    color: #000000;
+}
+
+.card__meals-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 234px;
+    width: 100%;
+    margin-bottom: 29.5px;
+}
+
+.meals-time__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 88.12px;
+    width: 100%;
+    margin: 0 28px 7.5px 0;
+}
+
+.meals-time__image {
+    margin-right: 9px;
+}
+
+.card__menu-item {
+    list-style-type: disc;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 172.5%;
+    color: #000000;
+}
+
+
+.card__menu {
+    padding-inline-start: 18px;
+}
+
+.card__order-program-button {
+    border: 2px solid #EF3120;
+    box-sizing: border-box;
+    border-radius: 58px;
+    width: 248px;
+    height: 62px;
+    background: transparent;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #EF3120;
+    margin: 40px 0 50px;
+}
+
+
+.instagram__header {
+    width: 100%;
+    margin-bottom: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.instagram-header__title {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 100%;
+    color: #000000;
+    margin: 0;
+}
+
+
+.instagram-header__hashes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 0;
+}
+
+.hashes__email {
+    margin-right: 21px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 104.5%;
+}
+
+.hashes__item {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 104.5%;
+}
+
+.instagram__pictures {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1162px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.instagram__pictures-image {
+    margin-bottom: 10px;
+}
+
+.feedback {
+    background: #282828;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 928px;
+    width: 100%;
+    margin: 74px 0 65px;
+}
+
+.feedback__header {
+    margin-bottom: 45px;
+}
+
+.feedback-header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.feedback-header__title {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 100%;
+    color: #BFE142;
+}
+
+.feedback__form {
+    display: flex;
+    justify-content: space-between;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 105%;
+    color: #FFFFFF;
+}
+
+.form__left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 430px;
+    margin-right: 60px;
+}
+
+.form__right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 430px;
+}
+
+.form-left__item {
+    margin-bottom: 60px;
+}
+
+.form-right__item {
+    margin-bottom: 60px;
+}
+
+.form-left__letters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.letters__item:first-child {
+    margin-right: 33px;
+}
+
+.form-left__agreement {
+    display: flex;
+    align-items: center;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.letters__item input[type=radio] {
+    display: none;
+}
+
+.letters__item label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 37px;
+    margin-right: 0;
+    line-height: 18px;
+    user-select: none;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.letters__item label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background: white 0 0 no-repeat;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.letters__item input[type=radio]:checked+label:before {
+    background: black 0 0 no-repeat;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.letters__item label::after {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    background: white 0 0 no-repeat;
+    border-radius: 50%;
+}
+
+.agreement__input {
+    display: none;
+}
+
+.agreement__label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 37px;
+    margin-right: 0;
+    line-height: 18px;
+    user-select: none;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.agreement__label:before {
+    content: "";
+    display: inline-block;
+    width: 19.25px;
+    height: 19.25px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background: white 0 0 no-repeat;
+    border: 1px solid white;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.agreement__input:checked+label:before {
+    background: black 0 0 no-repeat;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.agreement__label::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 9px;
+    position: absolute;
+    left: 5px;
+    bottom: 6px;
+    background: url(img/ok.svg) 0 0 no-repeat;
+}
+
+.form-left__button-send {
+    width: 220px;
+    height: 62px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 58px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footer {
+    background: #000000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-top: 90px;
+}
+
+.contacts__phone {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.contacts__adress {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.contacts__email {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.footer__contacts {
+    align-self: flex-start;
+}
+
+.footer__social {
+    align-self: flex-start;
+    position: relative;
+}
+
+.social__develop {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.social__develop-name {
+    font-family: Museo Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.social__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 197px;
+    width: 100%;
+    margin-bottom: 79px;
+}
+
+.social__anchor-img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -48px;
+    right: -70px;
+}
