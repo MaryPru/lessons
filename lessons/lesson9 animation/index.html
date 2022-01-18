@@ -337,34 +337,34 @@
                     </div>
                     <div class="feedback-header__title">Связаться с нами</div>
                 </div>
-                <form class="feedback__form form" action="">
+                <form class="feedback__form form" action="" method="get">
                     <div class="form__left form-left">
                         <label class="form-left__label" for="name">Имя</label>
-                        <input class="form-left__item" id="name" type="text" name="first-name" minlength="3" required
-                            placeholder="Введите имя">
+                        <input class="form-left__item" id="name" type="text" name="first-name" autofocus minlength="3"
+                            required placeholder="Введите имя">
 
                         <label class="form-left__label" for="email">E-mail*</label>
                         <input class="form-left__item" id="email" type="email" name="email" required
                             placeholder="Введите email">
 
                         <label class="form-left__label" for="call">Выбрать время звонка</label>
-                        <select class="form-left__item" name="" id="call">
-                            <option class="form-left__item-option" value="" disabled selected></option>
+                        <select class="form-left__item" name="time-of-call" id="call">
+                            <option class="form-left__item-option"  value=" 8:00-12:00"  selected>c 8:00 до 12:00</option>
+                            <option class="form-left__item-option"  value="12:00-17:00"  >c 12:00 до 17:00</option>
                         </select>
-                        <div class="form-left__letters letters form-left__item">
-                            <div class="letters__item">
-                                <input class="letters__item-recieve" id="recieve" type="radio">
-                                <label class="letters__item-label" for="recieve">Получать рассылку</label>
+                        <div class="form-left__options options form-left__item">
+                            <div class="options__item">
+                                <input class="options__item-recieve" checked value="yes" name="hand-choice-recieve" id="recieve" type="radio">
+                                <label class="options__item-label" for="recieve">Получать рассылку</label>
                             </div>
-                            <div class="letters__item">
-                                <input class="letters__item-not-recieve" id="not-recieve" type="radio">
-                                <label class="letters__item-label" for="not-recieve">Не получать рассылку</label>
+                            <div class="options__item">
+                                <input class="options__item-not-recieve" value="no" id="not-recieve" name="hand-choice-recieve" type="radio">
+                                <label class="options__item-label" for="not-recieve">Не получать рассылку</label>
                             </div>
                         </div>
                         <div class="form-left__agreement agreement form-left__item">
-                            <input class="agreement__input" id="agreement" type="checkbox">
-                            <label class="agreement__label" for="agreement">Я соглашаюсь на обработку персональных
-                                данных</label>
+                            <input class="agreement__input" checked name="agreement" id="agreement" type="checkbox">
+                            <label class="agreement__label" for="agreement">Я соглашаюсь на обработку персональных данных</label>
                         </div>
                         <button class="form-left__button-send" type="submit">
                             Отправить
@@ -372,13 +372,13 @@
                     </div>
                     <div class="form__right form-right">
                         <label class="form-right__label" for="last-name">Фамилия</label>
-                        <input class="form-right__item" type="text" name="last-name" id="last-name" minlength="5"
+                        <input  class="form-right__item" type="text" name="last-name" id="last-name" minlength="5"
                             required placeholder="Введите фамилию">
                         <label class="form-right__label" for="number-phone">Телефон</label>
-                        <input class="form-right__item" type="text" id="number-phone" required
-                            placeholder="Введите номер телефона" name="phone">
+                        <input class="form-right__item" type="tel" name="tel" id="number-phone" required
+                            placeholder="Введите номер телефона">
                         <label class="form-right__label" for="comment">Ваш комментарий</label>
-                        <textarea class="form-right__item" name="" id="comment" rows="6"></textarea>
+                        <textarea class="form-right__item" name="comment" id="comment" rows="6"></textarea>
                     </div>
                 </form>
             </div>

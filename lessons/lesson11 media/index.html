@@ -13,27 +13,30 @@
 </head>
 
 <body>
-    <header class="header">
-        <img class="logo" src="img/logo.png" alt="">
-        <nav class="menu">
-            <ul class="menu__list">
-                <li><a class="menu__link" href="">Программы</a></li>
-                <li><a class="menu__link" href="">Доставка</a></li>
-                <li><a class="menu__link" href="">На чем основано меню?</a></li>
-                <li><a class="menu__link" href="">О компании</a></li>
-            </ul>
-        </nav>
-        <div class="phone">
-            <div class="phone__number">+7(499)521-41-04</div>
-            <a class="phone__call" href=""><span class="phone__text">Обратный звонок</span></a>
-        </div>
-    </header>
+    <div class="content">
+        <header class="header">
+
+            <img class="logo" src="img/logo.png" alt="">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li><a class="menu__link" href="">Программы</a></li>
+                    <li><a class="menu__link" href="">Доставка</a></li>
+                    <li><a class="menu__link" href="">На чем основано меню?</a></li>
+                    <li><a class="menu__link" href="">О компании</a></li>
+                </ul>
+            </nav>
+            <div class="phone">
+                <div class="phone__number">+7(499)521-41-04</div>
+                <a class="phone__call" href=""><span class="phone__text">Обратный звонок</span></a>
+            </div>
+        </header>
+    </div>
 
     <main class="page">
         <section class="decoration">
             <div class="decoration-left">
-                <img class="decoration-left__bigLogo" src="img/bigLogo.png">
-                <img class="decoration-left__leaf2" src="img/leaf2.png">
+                <img class="decoration-left__bigLogo " src="img/bigLogo.png">
+                <img class="decoration-left__leaf2 decoration__item decoration__image" src="img/leaf2.png">
                 <div class="decoration-left__choose-program-button">
                     <div class="decoration-left__button-image">
                         <img src="img/calendar.svg" alt="">
@@ -42,18 +45,18 @@
                 </div>
             </div>
             <div class="decoration-right">
-                <img class="decoration-right__plate" src="img/plate.png">
-                <img class="decoration-right__leaf1" src="img/leaf1.png">
-                <img class="decoration-right__tomato1" src="img/tomato1.png">
-                <img class="decoration-right__tomato" src="img/tomato2.png">
-                <img class="decoration-right__chili" src="img/chili.png" alt="">
+                <img class="decoration-right__plate decoration__item " src="img/plate.png">
+                <img class="decoration-right__leaf1 decoration__item decoration__image" src="img/leaf1.png">
+                <img class="decoration-right__tomato1 decoration__item decoration__image" src="img/tomato1.png">
+                <img class="decoration-right__tomato decoration__item " src="img/tomato2.png">
+                <img class="decoration-right__chili decoration__item " src="img/chili.png" alt="">
             </div>
         </section>
         <div class="content">
-            <section class="benefits bz-content">
-                <div class="benefits__item">
+            <section class="benefits">
+                <div class="benefits__item ">
                     <div class="benefits__item-img">
-                        <i class="icon-dinner "></i> 
+                        <i class="icon-dinner "></i>
                     </div>
                     <div class="benefits__item-title">
                         Разнообразное меню
@@ -86,48 +89,6 @@
                 <div class="benefits__item">
                     <div class="benefits__item-img">
                         <i class="icon icon-food-service"></i>
-                    </div>
-                    <div class="benefits__item-title">
-                        Бесконтактная доставка
-                    </div>
-                </div>
-            </section>
-            <section class="benefits bz-border">
-                <div class="benefits__item-bz-border">
-                    <div class="benefits__item-img">
-                        <img src="img/dinner.svg" alt="">
-                    </div>
-                    <div class="benefits__item-title">
-                        Разнообразное меню
-                    </div>
-                </div>
-                <div class="benefits__item-bz-border">
-                    <div class="benefits__item-img">
-                        <img src="img/broccoli.svg" alt="">
-                    </div>
-                    <div class="benefits__item-title">
-                        Много офощей и фруктов
-                    </div>
-                </div>
-                <div class="benefits__item-bz-border">
-                    <div class="benefits__item-img">
-                        <img src="img/water.svg" alt="">
-                    </div>
-                    <div class="benefits__item-title">
-                        Минимум соли, без сахара
-                    </div>
-                </div>
-                <div class="benefits__item-bz-border">
-                    <div class="benefits__item-img">
-                        <img src="img/pot.svg" alt="">
-                    </div>
-                    <div class="benefits__item-title">
-                        Полезные способы приготовления
-                    </div>
-                </div>
-                <div class="benefits__item-bz-border">
-                    <div class="benefits__item-img">
-                        <img src="img/food-service.svg" alt="">
                     </div>
                     <div class="benefits__item-title">
                         Бесконтактная доставка
@@ -382,8 +343,8 @@
                 <form class="feedback__form form" action="" method="get">
                     <div class="form__left form-left">
                         <label class="form-left__label" for="name">Имя</label>
-                        <input class="form-left__item" id="name" type="text" name="first-name" autofocus minlength="3"
-                            required placeholder="Введите имя">
+                        <input class="form-left__item" id="name" type="text" name="first-name" minlength="3" required
+                            placeholder="Введите имя">
 
                         <label class="form-left__label" for="email">E-mail*</label>
                         <input class="form-left__item" id="email" type="email" name="email" required
@@ -391,22 +352,25 @@
 
                         <label class="form-left__label" for="call">Выбрать время звонка</label>
                         <select class="form-left__item" name="time-of-call" id="call">
-                            <option class="form-left__item-option"  value=" 8:00-12:00"  selected>c 8:00 до 12:00</option>
-                            <option class="form-left__item-option"  value="12:00-17:00"  >c 12:00 до 17:00</option>
+                            <option class="form-left__item-option" value=" 8:00-12:00" selected>c 8:00 до 12:00</option>
+                            <option class="form-left__item-option" value="12:00-17:00">c 12:00 до 17:00</option>
                         </select>
                         <div class="form-left__options options form-left__item">
                             <div class="options__item">
-                                <input class="options__item-recieve" checked value="yes" name="hand-choice-recieve" id="recieve" type="radio">
+                                <input class="options__item-recieve" checked value="yes" name="hand-choice-recieve"
+                                    id="recieve" type="radio">
                                 <label class="options__item-label" for="recieve">Получать рассылку</label>
                             </div>
                             <div class="options__item">
-                                <input class="options__item-not-recieve" value="no" id="not-recieve" name="hand-choice-recieve" type="radio">
+                                <input class="options__item-not-recieve" value="no" id="not-recieve"
+                                    name="hand-choice-recieve" type="radio">
                                 <label class="options__item-label" for="not-recieve">Не получать рассылку</label>
                             </div>
                         </div>
                         <div class="form-left__agreement agreement form-left__item">
                             <input class="agreement__input" checked name="agreement" id="agreement" type="checkbox">
-                            <label class="agreement__label" for="agreement">Я соглашаюсь на обработку персональных данных</label>
+                            <label class="agreement__label" for="agreement">Я соглашаюсь на обработку персональных
+                                данных</label>
                         </div>
                         <button class="form-left__button-send" type="submit">
                             Отправить
@@ -414,7 +378,7 @@
                     </div>
                     <div class="form__right form-right">
                         <label class="form-right__label" for="last-name">Фамилия</label>
-                        <input  class="form-right__item" type="text" name="last-name" id="last-name" minlength="5"
+                        <input class="form-right__item" type="text" name="last-name" id="last-name" minlength="5"
                             required placeholder="Введите фамилию">
                         <label class="form-right__label" for="number-phone">Телефон</label>
                         <input class="form-right__item" type="tel" name="tel" id="number-phone" required

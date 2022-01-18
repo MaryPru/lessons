@@ -79,15 +79,21 @@ input[type="email"] {
   width: 100%;
 }
 
+input[type="tel"] {
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+
+
 input[type="radio"] {
   margin-right: 19px;
   width: 21px;
   height: 21px;
-
+  
 }
 
 input [type="radio"]:checked {
-  background: black;
+  background:  black;
 }
 
 input[type="checkbox"] {
@@ -100,13 +106,13 @@ select {
   color: white;
   width: 100%;
   border-bottom: 1px solid white;
-  padding-bottom: 10px;
   padding-right: 10px;
 }
 
 option {
   background: transparent;
   border: none;
+  color: black;
 }
 
 textarea {
@@ -116,6 +122,7 @@ textarea {
   border: 0;
   outline: 0;
   border-bottom: 1px solid white;
+  color: white;
 }
 
 /* Grouping content
