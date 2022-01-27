@@ -209,8 +209,10 @@ body {
 }
 
 .bz-border {
-    box-sizing: border-box;
-    justify-content: space-between;
+    box-sizing: border-box;  
+    margin-left: -105px;
+    width: calc(100% + 105px);
+   
 }
 
 .bz-border *,
@@ -229,7 +231,8 @@ body {
 }
 
 .benefits__item-bz-border {
-    width: 154px;
+    width: 253px;
+    padding-left: 105px;
 }
 
 .benefits__item-img {
