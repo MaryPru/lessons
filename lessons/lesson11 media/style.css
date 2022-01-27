@@ -608,7 +608,8 @@ body {
     color: #BFE142;
 }
 
-.feedback__form {
+.feedback__form,
+.form {
     display: flex;
     justify-content: space-between;
     font-family: Segoe UI;
@@ -620,32 +621,24 @@ body {
     width: 100%;
 }
 
-.form__left {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 50%;
-    margin-right: 3.75rem;
+.form-mobile {
+    display: none;
 }
 
+.form__left,
 .form__right {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
     width: 50%;
 }
 
-.form-left__item {
+.form__left {
+    margin-right: 60px;
+}
+
+.form__item {
     margin-bottom: 60px;
 }
 
-.form-right__item {
-    margin-bottom: 60px;
-}
-
-.form-left__options {
+.form__options {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -655,7 +648,7 @@ body {
     margin-right: 33px;
 }
 
-.form-left__agreement {
+.form__agreement {
     display: flex;
     align-items: center;
 }
@@ -746,7 +739,7 @@ body {
     background: url(img/ok.svg) 0 0 no-repeat;
 }
 
-.form-left__button-send {
+.form__button-send {
     width: 220px;
     height: 62px;
     border: 2px solid #FFFFFF;
@@ -874,10 +867,23 @@ body {
         right: 0px;
     }
 
+    .decoration-right__plate {
+        max-width: 100%;
+        width: 80%;
+    }
+
+    .decoration-left__bigLogo {
+        max-width: 100%;
+        width: 90%;
+    }
+
     .programs__cards {
         justify-content: space-evenly;
     }
 
+    .feedback__form {
+        width: 90%;
+    }
 }
 
 @media (max-width:900px) {
@@ -964,6 +970,9 @@ body {
         width: 50%;
         max-width: 120px;
     }
+    .decoration-right__plate {
+        width: 70%;
+    }
 }
 
 @media (max-width:700px) {
@@ -1001,8 +1010,46 @@ body {
         left: 195px;
         bottom: -35px;
     }
-}
 
+    .benefits {
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .benefits__item {
+        margin-top: 10px;
+    }
+
+    .benefits__item:nth-child(odd) {
+        align-self: flex-start;
+    }
+
+    .benefits__item:nth-child(even) {
+        align-self: flex-end;
+    }
+
+    .feedback__form {
+        flex-direction: column;
+    }
+
+    .form-mobile {
+        display: block;
+    }
+
+    .form-desctop {
+        display: none;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .form__options {
+        justify-content: flex-start;
+    }
+}
 
 @media (max-width:500px) {
     html {
@@ -1015,15 +1062,6 @@ body {
 
     .instagram__pictures {
         justify-content: center;
-    }
-
-    .benefits__item {
-        margin-bottom: 10px;
-    }
-
-    .benefits {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
     }
 
     .decoration {
@@ -1052,6 +1090,24 @@ body {
 
     .decoration-left__leaf2 {
         left: 26px;
+    }
+
+    .form__options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form__item {
+        margin-bottom: 15px;
+    }
+
+    .options__item {
+        margin-bottom: 10px;
+    }
+
+    .form__button-send {
+        width: 170px;
+        height: 45px;
     }
 }
 
